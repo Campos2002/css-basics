@@ -1,0 +1,103 @@
+<html lang="pt-br">
+
+	<head>
+		
+		<meta charset="utf-8">
+		
+		<title>Estilização de Tabelas</title>
+
+		<!-- Normalize CSS -->
+		<link rel="stylesheet" type="text/css" href="css/normalize.css">
+		
+		<!-- Estilo Customizado -->
+		<link rel="stylesheet" type="text/css" href="css/xxxxxxxxx.css">
+
+		<!--[if IE]>
+			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+
+		<style type="text/css">
+
+            body{
+                font-family: "Trebuchet MS", Helvetica, sans-serif;
+                margin: 20px;
+            }
+
+            table{
+                width: 500px;
+                border-collapse: separate;  /*<<< --- SEPARATE = Coloca espaço de 1px entre as bordas da tebala(Opção padrão). COLLAPSE = Retira espaçamento entre as bordas da tebla*/
+                border: 2px solid black;
+            }
+
+            th, td{
+                
+                padding: 7px;
+                text-align: left;
+            }
+
+            th{
+                text-transform: uppercase; /*<<< --- Deixa TODAS as letras do elemento MAIUSCULAS*/
+                /* border-top: 1px solid #999; */
+                border-bottom: 1px solid #111;
+                text-align: left;
+                font-size: 90%;
+                letter-spacing: 0.1em; /*<<< --- ESPAÇAMENTO entre as letras*/
+                background-color: #B9D6ED;
+            }
+
+            tr.alternado{
+                background-color: #EDCEB9;
+            }
+
+            tr:hover{
+                background-color: #c3e6e5;
+            }
+
+            .numero{
+                text-align: right;
+            }
+
+		</style>
+
+	</head>
+
+	<body>
+
+        <h3><u>Estilização de Tabelas</u></h3>
+
+        <table>
+
+            <tr>
+                <th>Código</th>
+                <th>Produto</th>
+                <th class="numero">Preço</th>
+            </tr>
+
+            <tr>
+                <td>001</td>
+                <td>Notebook</td>
+                <td class="numero">R$ 2.500,00</td>
+            </tr>
+
+            <tr class="alternado">
+                <td>002</td>
+                <td>Tablet</td>
+                <td class="numero">R$ 1.500,00</td>
+            </tr>
+
+            <tr>
+                <td>003</td>
+                <td>iPhone</td>
+                <td class="numero">R$ 4.500,00</td>
+            </tr>
+
+            <tr class="alternado">
+                <td>004</td>
+                <td>iPad</td>
+                <td class="numero">R$ 6.500,00</td>
+            
+        </table>
+
+	</body>
+
+</html>

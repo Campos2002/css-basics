@@ -1,0 +1,63 @@
+
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">	
+		<title>Animações</title>
+
+		<!-- Normalize CSS -->
+		<link rel="stylesheet" type="text/css" href="css/normalize.css">
+		
+		<!-- Estilo Customizado -->
+		<link rel="stylesheet" type="text/css" href="css/estilo_animacoes.css">
+
+		<!--[if IE]> <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script> <![endif]-->
+
+		<style type="text/css">
+			
+			@keyframes animacao-box{
+
+				from{
+					background: red;
+					border-radius: px;
+					top: 0;
+					left: 0
+				}
+
+				to{
+					background: yellow;
+					border-radius: 300px;
+					top: 150px;
+					left: 150px
+				}
+			}
+
+			#box-animacao{
+				width: 300px;
+				height: 300px;
+				position: relative;
+				background: red;
+				box-shadow: 3px 3px 23px #40403F;
+
+				/*
+				animation-name: animacao-box;
+				animation-duration: 5s;
+				animation-delay: 0s;
+				animation-iteration-count: infinite;
+				animation-direction: alternate;
+				*/
+
+				animation: animacao-box 5s 0s infinite alternate;
+				animation-timing-function: linear;
+			}
+
+		</style>
+		
+	</head>		
+
+	<body>
+				
+		<div id="box-animacao"></div>
+			
+	</body>
+
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Degradê e Transparência</title>
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/estilo_degrade_transparencia.css">
+	<!--[if IE]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	<style type="text/css">
+		
+body{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;	
+}
+
+#box{
+	width: 250px;
+	height: 250px;
+	background: url(../img/camera.png);
+	border-radius: 10px;
+	padding: 20px;
+	box-sizing: border-box;
+	margin: 10px;
+	float: left;
+	box-shadow: 3px 3px 23px #40403F;
+}
+
+#box h2{
+	background: rgba(255, 255, 255, 0.3);
+	border-bottom: 0px solid #fff;
+	padding: 4px;	
+}
+
+#box2{
+	width: 250px;
+	height: 250px;	
+	background: linear-gradient(35deg, #22c1c3, #3cd12a);	
+	border-radius: 10px;
+	padding: 20px;
+	box-sizing: border-box;
+	margin: 10px;
+	float: left;
+	box-shadow: 3px 3px 23px #40403F;
+}
+
+#box3{
+	width: 250px;
+	height: 250px;	
+	background: linear-gradient(to top, red, yellow);
+	border-radius: 10px;
+	padding: 20px;
+	box-sizing: border-box;	
+	margin: 10px;
+	float: left;
+	box-shadow: 3px 3px 23px #40403F;
+}
+
+#box4{
+	width: 250px;
+	height: 250px;	
+	background: rgba(96, 162, 27, 0.2);
+	border-radius: 10px;
+	padding: 20px;
+	box-sizing: border-box;	
+	margin: 10px;
+	float: left;	
+	box-shadow: 3px 3px 23px #40403F;
+}
+
+#box4 h2{
+	color: white;
+	text-shadow: 3px 3px 10px #40403F;
+}
+
+		
+	</style>
+
+</head>
+
+<body>
+
+	<div class="main-container">
+		
+			<div id="box">
+				<h2>Título</h2>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam fringilla tortor quis felis sagittis, nec cursus dui pretium.		
+			</div>
+
+			<div id="box2">
+				<h2>Título</h2>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam fringilla tortor quis felis sagittis, nec cursus dui pretium.		
+			</div>
+
+			<div id="box3">
+				<h2>Título</h2>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam fringilla tortor quis felis sagittis, nec cursus dui pretium.		
+			</div>
+
+			<div id="box4">
+				<h2>Título</h2>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam fringilla tortor quis felis sagittis, nec cursus dui pretium.		
+			
+		</div>
+	</div>
+
+</body>
+</html>

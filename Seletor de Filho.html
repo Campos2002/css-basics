@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="">
+		<title>Seletor de Filho</title>
+		
+		<style type="text/css">
+
+			/*<<<<<<<<<< SELETOR DE FILHO - Seleciona apenas determinado elemento que é FILHO de outro elemento, ambos especificados na seleção <<<<<<<<<<*/
+			/*<<<<<<<<<< No caso, estamos formatando LINKS que são FILHOS da Tag LI, os que não estão ligados a nenhuma tag LI, não serão formatados <<<<<*/
+			/*--------------------------------------------------------------------------------------------------------------------------------------------*/
+
+			li>a{		/* <<< Seletor de Filho (>) */
+				color: red;
+			}
+
+		</style>
+
+	</head>
+
+	<body>
+
+		<h1>Seletor de Filho</h1>
+
+		<ul>
+			<li><a href="">QUEM SOMOS</a></li>
+			<li><a href="">SOBRE</a></li>
+			<li><a href="">AGENDE</a></li>
+			<li><a href="">CONTATO</a></li>
+		</ul>
+
+		<a href="">LINK DE TESTE</a>	
+
+	</body>
+
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="">
+		<title>Seletor de Descendente</title>
+		<style type="text/css">
+
+			/*<<<<<<<<<< SELETOR DE DESCENDENTE - Seleciona elementos que são DESCENDENTES de outro elemento, e não apenas FILHOS (Diretamente linkados) <<<<<<<<<<*/
+			/*-----------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+			li a {
+				color: red;
+				text-decoration: none;
+			}
+
+		</style>
+
+	</head>
+
+
+	<body>
+
+		<h1>Seletor de Descendente</h1>
+
+		<ul>
+			<li><a href="">QUEM SOMOS</a></li>
+			<li><a href="">SOBRE</a></li>
+			<li><span><a href="">AGENDE</a></span></li> <!-- Se estivessemos utilizando o SELETOR DE FILHO, o link AGENDE não estaria sendo formatado, pois está dentro de uma SPAN -->
+			<li><a href="">CONTATO</a></li>
+		</ul>	
+
+	</body>
+
+</html>

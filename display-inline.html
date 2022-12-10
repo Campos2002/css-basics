@@ -1,0 +1,56 @@
+<html lang="pt-br">
+
+	<head>
+		
+		<meta charset="utf-8">
+		
+		<title>Display Inline</title>
+
+		<!-- Normalize CSS -->
+		<link rel="stylesheet" type="text/css" href="css/normalize.css">
+		
+		<!-- Estilo Customizado -->
+		<link rel="stylesheet" type="text/css" href="css/xxxxxxxxx.css">
+
+		<!--[if IE]>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+		<![endif]-->
+
+		<style type="text/css">
+
+			/* ------------------------------------------------------------- DISPLAY INLINE -------------------------------------------------------------- */
+			/* ------------------------------------------------------------------------------------------------------------------------------------------- */
+
+            body{
+                margin: 15px;
+            }
+
+            .d-inline{
+                display: inline;
+                background-color: royalblue;
+                border: solid 1px red;
+				height: 350px; 	/* <<< --- Não vai funcionar pois é um elemento INLINE */
+				width: 350px; 	/* <<< --- Não vai funcionar pois é um elemento INLINE */
+            }			
+
+		</style>
+
+	</head>
+
+	<body>
+
+        <h2><u>Display Inline</u></h2>
+
+		<div id="container">
+
+            <div class="d-inline">Display 1</div> <!-- O display INLINE se adequa ao tamanho do elemento inserido na div -->
+            <div class="d-inline">Display 2</div> <!-- O display INLINE se adequa ao tamanho do elemento inserido na div -->
+            <div class="d-inline">Display 3</div> <!-- O display INLINE se adequa ao tamanho do elemento inserido na div -->
+
+        </div>
+
+        <hr>
+		
+	</body>
+
+</html>

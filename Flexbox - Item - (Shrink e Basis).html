@@ -1,0 +1,91 @@
+<html lang="pt-br">
+
+	<head>
+		
+		<meta charset="utf-8">
+		
+		<title>Flexbox - Itens 2</title>
+
+		<!-- Normalize CSS -->
+		<link rel="stylesheet" type="text/css" href="css/normalize.css">
+
+		<!--[if IE]>
+			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+
+		<style type="text/css">
+
+            #container{
+                background: #eca8a8;
+                height: 400px;
+                display: flex; /* <<< --- ATENÇÃO! ATRIBUTO PRINCIPAL DESTA AULA */
+                align-items: center;
+            }
+
+            .item{
+                background: white;
+                /* width: 200px; */
+                height: 100px;
+                margin: 35px;
+                box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px ;
+                border-radius: 5px;
+                flex-grow: 0; /* <<< --- Define a proporção do espaço ocupado por um item */
+                flex-shrink: 1; /* <<< --- Define a capacidade de redução do tamanho de um item */
+                flex-basis: 200px; /* <<< --- Indica o tamanho inicial do flex item antes da distribuição do espaço restante */
+            }
+
+            .item1{
+                /* flex-grow: 1;
+                flex-shrink: 1; */
+            }
+
+            .item2{
+                flex-grow: 1;
+                /* flex-shrink: 2; */
+            }
+            
+            .item3{
+                flex-grow: 2;
+                /* flex-shrink: 5; */
+            }
+
+            /*.ordem1{
+                order: 1;
+            }
+
+            .ordem2{
+                order: 2;
+            }
+
+            .ordem3{
+                order: 3;
+            }
+
+            .ordem4{
+                order: 4;
+            }
+
+            .ordem{
+                order: -1;
+            } */
+
+		</style>
+
+	</head>
+
+	<body>
+
+        <h1>Flexbox</h1>
+
+        <div id="container">
+
+            <div class="item">01</div>
+            <div class="item item2">02</div>
+            <div class="item item3">03</div>
+            <div class="item">04</div>
+
+        </div>		
+		
+	</body>
+
+</html>

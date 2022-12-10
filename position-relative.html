@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Posicionamento - Relative</title>
+	<style type="text/css">
+
+		/* <<<<<<<<<<<<<< RELATIVE - ALINHA O ELEMENTO BASEADO NA POSIÇÃO INICIAL QUE ELE TEM >>>>>>>>>>>>>>>>*/
+		
+		body{
+			background: #007fc7;
+		}
+
+		p{
+			width: 400px;
+		}
+
+		#container{
+			margin: 10px auto; 		/*<<< ATENÇÃO - CENTRALIZAR CONTAINER!*/
+			background: #fff;
+			width: 800px;			
+			padding: 20px;
+			text-align: justify; 	/*<<< Justifica o texto.*/
+			}
+
+		.relative{
+			border: 1px solid red;
+			position: relative; 	/*<<< Top, Right, Bottom, Left*/
+			top: 10px; 				/*<<< Pode se usar números negativos. Ex:  -10px;*/	
+			left: 140px; 			/*<<< Pode se usar números negativos. Ex:  -140px;*/
+		}
+
+	</style>
+
+</head>
+<body>
+	<div id="container">
+
+		<h1><u>Posicionamento - Relative</u></h1>
+
+		<p>
+		<strong>P1</strong>-- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tortor velit, pellentesque sed porttitor vel, congue iaculis quam. Integer erat velit, aliquam ut mauris at, cursus luctus odio. In lectus orci, lacinia non egestas id, malesuada vel tortor. Nam in nulla id erat facilisis tempus in a nisl. Nulla ac justo a lacus convallis mollis. Maecenas condimentum mollis sodales. Morbi non orci eu ipsum finibus accumsan.
+		</p>
+
+		<p class="relative">
+		<strong>P2</strong>-- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tortor velit, pellentesque sed porttitor vel, congue iaculis quam. Integer erat velit, aliquam ut mauris at, cursus luctus odio. In lectus orci, lacinia non egestas id, malesuada vel tortor. Nam in nulla id erat facilisis tempus in a nisl. Nulla ac justo a lacus convallis mollis. Maecenas condimentum mollis sodales. Morbi non orci eu ipsum finibus accumsan.
+		</p>
+
+		<p>
+		<strong>P3</strong>-- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tortor velit, pellentesque sed porttitor vel, congue iaculis quam. Integer erat velit, aliquam ut mauris at, cursus luctus odio. In lectus orci, lacinia non egestas id, malesuada vel tortor. Nam in nulla id erat facilisis tempus in a nisl. Nulla ac justo a lacus convallis mollis. Maecenas condimentum mollis sodales. Morbi non orci eu ipsum finibus accumsan.
+		</p>
+		
+	</div>
+</body>
+</html>

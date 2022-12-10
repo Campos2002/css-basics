@@ -1,0 +1,162 @@
+<html lang="pt-br">
+
+	<head>
+		
+		<meta charset="utf-8">
+		
+		<title>Imagens Líquidas</title>
+
+		<!-- Normalize CSS -->
+		<link rel="stylesheet" type="text/css" href="css/normalize.css">
+		
+		<!-- Estilo Customizado -->
+		<link rel="stylesheet" type="text/css" href="css/xxxxxxxxx.css">
+
+		<!--[if IE]>
+			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+
+		<style type="text/css">		
+
+		body{
+			font-family: "Trebuchet MS", Helvetica, sans-serif;
+			background: #f2f2f2;
+		}
+
+		#container{
+            border: 1px solid red;
+			width: 85%;
+			margin: 0 auto;
+			background: #fff;
+            min-width: 820px;   /* <<< --- Define o tamanho MÍNIMO da largura para o site*/
+            max-width: 1280px;   /*<<< --- Define o tamanho MÁXIMO da largura para o site*/
+		}
+
+		#marca{		
+			height: 200px;
+			background: #225992 url(img/cabecalho-liquido-2.jpg) no-repeat center; /*<<< --- Atributo "CENTER" para centralizar a imagem*/
+			text-align: center;
+			line-height: 200px;
+		}
+
+		#conteudo{	
+            border: 1px solid red;
+			width: 74%;
+			float: right;
+			text-align: justify;
+			padding: 5px;
+			box-sizing: border-box;
+		}
+
+		#navegacao-caixa{		
+            border: 1px solid red;
+			width: 25%;		
+			float: left;
+			padding-top: 10px;
+			padding-bottom: 10px;
+			background: #d1d1d1;
+            margin-top: 5px;
+		}
+
+		#navegacao-menu{		
+			list-style: none;
+			line-height: 40px;
+			text-indent: 35px;
+			text-decoration: none;
+			color: darkred;
+		}
+
+		#navegacao-menu a{		
+			text-decoration: none;
+			color: darkred;			
+		}
+
+		#rodape{		
+			clear: both;
+			background: #c4c4c4;
+			padding: 5px;
+		}
+
+		#conteudo h2{
+			text-align: center;
+		}
+
+		#conteudo-principal{
+			width: 63%;
+			float: left;	
+            padding: 20px;
+            box-sizing: border-box;
+            border: solid 1px red;
+		}
+
+		#conteudo-secundario{
+			width: 36%;
+			float: right;
+			background: #d1d1d1;
+			padding: 20px;
+			box-sizing: border-box;
+		}
+
+        /*#imagem-conteudo-principal{
+            width: 90%%;
+            overflow: hidden; <<< --- ESCONDE o conteúdo que ULTRAPASSA as áreas da imagem
+        }*/
+
+        img.img-noticia{
+             width: 100%;
+             max-width: 600px; /* <<< --- Por largura máxima igual a largura da imagem para evitar distorções*/
+        }
+
+		</style>
+
+	</head>
+
+	<body>
+
+		<div id="container">
+
+			<div id="marca">Marca</div>
+
+			<div id="conteudo">
+
+				<div id="conteudo-principal">
+
+					<h2>Conteúdo Principal</h2>
+
+                    <img class="img-noticia" src ="img/natureza-liquido.jpg">
+
+					<p>&nbsp &nbsp Integer convallis urna turpis, non bibendum libero tincidunt vitae. Quisque facilisis urna a nulla laoreet gravida. Ut ac mattis sapien, aliquet luctus sem. Mauris a diam at velit vestibulum lobortis at eget felis. Maecenas rhoncus est erat, vitae gravida mauris efficitur nec. Suspendisse sit amet euismod neque. Donec eu tristique arcu. Pellentesque ac enim quis velit ullamcorper aliquet ut eu neque. Aliquam iaculis quis ante ac rhoncus. Nulla sit amet pharetra risus. Phasellus hendrerit quam a ex mattis sodales. Ut rhoncus, mi a scelerisque lobortis, urna felis semper nunc, ut rhoncus diam ex in nisi.</p>
+
+				</div>
+				
+				<div id="conteudo-secundario">
+
+					<h2>Conteúdo Secundário</h2>
+
+					<p>&nbsp &nbsp Maecenas rhoncus est erat, vitae gravida mauris efficitur nec. Suspendisse sit amet euismod neque. Donec eu tristique arcu. Pellentesque ac enim quis velit ullamcorper aliquet ut eu neque. Aliquam iaculis quis ante ac rhoncus. Nulla sit amet pharetra risus. Phasellus hendrerit quam a ex mattis sodales. Ut rhoncus, mi a scelerisque lobortis, urna felis semper nunc, ut rhoncus diam ex in nisi</p>
+
+				</div>
+			
+			</div>
+
+			<div id="navegacao-caixa">
+
+				<ul id="navegacao-menu">
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Sobre</a></li>
+					<li><a href="#">Notícias</a></li>
+					<li><a href="#">Produtos</a></li>
+					<li><a href="#">Serviços</a></li>
+					<li><a href="#">Clientes</a></li>
+					<li><a href="#">Contato</a></li>
+				</ul>
+
+			</div>
+
+			<div id="rodape">Rodapé</div>
+
+		</div>
+		
+	</body>
+
+</html>

@@ -1,0 +1,56 @@
+<html lang="pt-br">
+
+	<head>
+		
+		<meta charset="utf-8">
+		
+		<title>Display Block</title>
+
+		<!-- Normalize CSS -->
+		<link rel="stylesheet" type="text/css" href="css/normalize.css">
+		
+		<!-- Estilo Customizado -->
+		<link rel="stylesheet" type="text/css" href="css/xxxxxxxxx.css">
+
+		<!--[if IE]>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+		<![endif]-->
+
+		<style type="text/css">
+
+			/* ------------------------------------------------------------- DISPLAY BLOCK -------------------------------------------------------------- */
+			/* ------------------------------------------------------------------------------------------------------------------------------------------ */
+
+            body{
+                margin: 15px;
+            }
+
+            .d-block{
+                display: block;
+                background-color: royalblue;
+                border: solid 1px red;
+				height: 200px; /* <<< --- DISPLAY BLOCK por padrão pega TODA a largura da tela */
+                margin: 10px;
+            }			
+
+		</style>
+
+	</head>
+
+	<body>
+
+        <h2><u>Display Block</u></h2>
+
+		<div id="container">
+
+            <div class="d-block">Display 1</div>
+            <div class="d-block">Display 2</div>
+            <div class="d-block">Display 3</div>
+
+        </div>
+
+        <hr>
+		
+	</body>
+
+</html>

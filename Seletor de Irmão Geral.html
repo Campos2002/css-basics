@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="">
+		<title>Seletor de Irmão Geral</title>
+		<style type="text/css">
+
+			/*<<<< SELETOR DE IRMÃO GERAL - h2~p{} Seleciona TODOS os elementos <p> que são irmãos de qualquer elemento <h2>, mesmo que não sejam diretamente precedentes <<<<*/
+			/*----------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+			h2~p{
+				color: red;
+				text-decoration: none;
+			}
+
+		</style>
+
+	</head>
+
+	<body>
+
+		<h1>Seletor de Irmão Geral</h1>
+
+		<hr>
+
+		<div>
+			<p>Sem seletor de irmão geral.</p> <!-- O seletor não age aqui porquê a o elemento <p> está ANTES do <h2>, e não DEPOIS. -->
+			<h2>Título</h2>
+			<p>Com seletor de irmão geral.</p> <!-- Onde nosso SELETOR está agindo. -->
+			Sem seletor de irmão geral
+			<p>Com seletor de irmão geral.</p> <!-- Onde nosso SELETOR está agindo. -->
+			<p>Com seletor de irmão geral.</p> <!-- Onde nosso SELETOR está agindo. -->
+		</div>
+
+		<hr>
+
+		<div>
+			<p>Sem seletor de irmão geral.</p>
+			<p>Sem seletor de irmão geral.</p>
+		</div>
+
+	</body>
+
+</html>

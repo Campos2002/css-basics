@@ -1,0 +1,173 @@
+<html lang="pt-br">
+
+	<head>
+		
+		<meta charset="utf-8">
+		
+		<title>Estilização de Formulários</title>
+
+		<!-- Normalize CSS -->
+		<link rel="stylesheet" type="text/css" href="css/normalize.css">
+		
+		<!-- Estilo Customizado -->
+		<link rel="stylesheet" type="text/css" href="css/xxxxxxxxx.css">
+
+		<!--[if IE]>
+			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+
+		<style type="text/css">
+
+			body{
+				font-family: "Trebuchet MS", Helvetica, sans-serif;
+                /* margin: 10px;
+				padding: 10px */;
+			}
+
+			#cabecalho{
+				width: 100%;
+				height: 40px;
+				background: linear-gradient(90deg, rgba(0,212,255,1) 0%, rgba(186,119,155,0.7539390756302521) 42%);
+				padding-top: 10px;
+				padding-bottom: 10px;
+				border-bottom: 1px solid #E9CEF2;
+			}
+
+			#container{
+				margin: 20px;
+			}
+
+			fieldset{
+				padding: 1.5em;
+				margin: 1em 0;
+				background-color: #CEF2F0;
+				border: 2px solid rgb(176, 213, 221);
+			}
+
+			legend{
+				font-size: 1.3em;
+				color: brown;
+			}
+
+			#cabecalho h3{
+				font-size: 1.3em;
+				color: brown;
+				line-height: 18%;
+				text-indent: 25px;
+			}
+
+			label{
+				display: block;
+				cursor: pointer; /*<<< --- Vira uma MÃOZINHA quando o usuário passa o mouse por cima*/
+				margin-bottom: 0.3em;
+			}
+
+			textarea{
+				width: 100%;
+				height: 10em;
+			}
+
+			input[type="text"] {
+				width: 20em;				
+			}
+
+			input[type="email"] {
+				width: 20em;
+			}
+
+			input{
+				border: 2px inset #C3E0F7;
+			}
+
+			textarea{
+				border: 2px inset #c3e0f7;
+			}
+		
+		</style>
+
+	</head>
+
+	<body>
+
+
+		<div id="cabecalho">
+
+			<h3>Cadastro de novos clientes.</h3>
+
+		</div>		
+
+		<div id="container">
+
+			<form>
+
+				<!-- Associar Label (Etiqueta ou Rótulo) com os Elementos - Serve para identificar as CAIXAS TEXTOS -->
+
+				<fieldset>
+
+					<legend>Login</legend>
+
+					<div>
+
+						<!-- Nome -->
+						<label for="nome">Nome:</label>
+						<input type="text" id="nome" placeholder="Nome Completo">
+						<br><br>
+
+						<!-- E-mail -->
+						<label for="email">E-mail:</label>
+						<input type="email" id="email" placeholder="Seu E-mail aqui">
+						<br><br>
+
+						<!-- Data -->
+						<label for="data">Data de Nascimento:</label>
+						<input type="date" id="data">
+
+					</div>
+
+				</fieldset>
+
+				<fieldset>
+
+					<legend>Comentários</legend>
+
+					<div>
+
+						<!-- Nome -->
+						<label for="mensagem">Mensagem:</label>
+						<textarea name="mensagem" id="mensagem" placeholder="Escreva sua mensagem"></textarea>
+
+					</div>
+
+				</fieldset>
+
+				<fieldset>
+
+					<legend>Lembrar de mim</legend>
+
+					<div>
+
+						<label>
+							<input type="radio" name="lembrar" id="sim"> Sim
+						</label>
+
+					</div>
+
+					<div>
+
+						<label>
+							<input type="radio" name="lembrar" id="não"> Não
+						</label>
+
+					</div>
+
+				</fieldset>			
+
+				<input type="submit" value="enviar">
+
+			</form>
+
+		</div>
+		
+	</body>
+
+</html>

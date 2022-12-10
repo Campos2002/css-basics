@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Posicionamento - Absolute</title>
+	<style type="text/css">		
+
+		/* <<< ABSOLUTE - PERMITE QUE VOCÊ DEFINA UMA CAIXA QUE É REMOVIDA DO FLUXO DO DOCUMENTO E VOCÊ CONSEGUE ALINHALA BASEADA NO CONTAINER QUE TENHA UMA POSIÇÃO >>>*/
+
+		body{
+			background: #007fc7;
+		}		
+
+		p{
+			width: 400px;
+		}
+		
+		#container{
+			margin: 10px auto; 			/*<<< ATENÇÃO - CENTRALIZAR CONTAINER!*/
+			background: #fff;
+			width: 800px;
+			padding: 10px;
+			text-align: justify; 		/*<<< Justifica o texto.*/
+			position: relative;			/*<<< O CONTAINER precisa ter uma POSIÇÃO (Absolute, Relative, Fixed) para que possamos alinhar um elemento ABSOLUTE baseado nele*/		
+		}
+
+		.absolute{ 						/*<<< Se o CONTAINER não tiver posição definida, a classe ABSOLUTE se posicionará em relação ao BODY*/
+			border: 1px solid red;
+			background: #B1DEC5;
+			position: absolute;
+			top: 80px;
+			right:80px;
+		}
+
+	</style>
+
+</head>
+<body>
+	<div id="container">
+
+		<h1><u>Posicionamento - Absolute</u></h1>
+
+		<p>
+		<strong>P1</strong>-- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tortor velit, pellentesque sed porttitor vel, congue iaculis quam. Integer erat velit, aliquam ut mauris at, cursus luctus odio. In lectus orci, lacinia non egestas id, malesuada vel tortor. Nam in nulla id erat facilisis tempus in a nisl.
+		</p>
+
+		<p class="absolute">
+		<strong>P2</strong>-- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tortor velit, pellentesque sed porttitor vel, congue iaculis quam. Integer erat velit, aliquam ut mauris at, cursus luctus odio. In lectus orci, lacinia non egestas id, malesuada vel tortor. Nam in nulla id erat facilisis tempus in a nisl.
+		</p>
+
+		<p>
+		<strong>P3</strong>-- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tortor velit, pellentesque sed porttitor vel, congue iaculis quam. Integer erat velit, aliquam ut mauris at, cursus luctus odio. In lectus orci, lacinia non egestas id, malesuada vel tortor. Nam in nulla id erat facilisis tempus in a nisl.
+		</p>
+		
+	</div>
+</body>
+</html>
